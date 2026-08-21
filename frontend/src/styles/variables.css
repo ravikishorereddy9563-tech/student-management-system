@@ -1,0 +1,26 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+
+  --secondary: #64748b;
+
+  --success: #16a34a;
+  --warning: #f59e0b;
+  --danger: #dc2626;
+
+  --background: #f8fafc;
+  --surface: #ffffff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #64748b;
+
+  --border: #e2e8f0;
+
+  --sidebar-width: 250px;
+  --navbar-height: 70px;
+
+  --radius: 10px;
+
+  --shadow:
+    0 4px 12px rgba(15, 23, 42, 0.08);
+}
