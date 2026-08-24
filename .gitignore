@@ -32,3 +32,6 @@ backend/sqlite_data.json
 *.njsproj
 *.sln
 *.sw?
+
+.vercel
+.env*
