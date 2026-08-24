@@ -2,6 +2,13 @@ from django.db import models
 
 
 class Teacher(models.Model):
+    department = models.ForeignKey(
+        "academics.Department",
+        on_delete=models.SET_NULL,
+        related_name="teachers",
+        null=True,
+        blank=True,
+    )
     employee_id = models.CharField(max_length=20, unique=True)
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)

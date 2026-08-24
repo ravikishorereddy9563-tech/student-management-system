@@ -45,7 +45,7 @@ const Marks = () => {
             {marks.map((mark) => (
               <tr key={mark.id}>
                 <td>{mark.student}</td>
-                <td>{mark.student}</td>
+                <td>{mark.student_name || mark.student}</td>
                 <td>{mark.subject}</td>
                 <td>{mark.marks}</td>
                 <td>{mark.grade || "-"}</td>
