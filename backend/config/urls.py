@@ -14,54 +14,76 @@ def home(request):
 
 
 urlpatterns = [
-
+    # Home
     path(
         "",
         home,
-        name="home"
+        name="home",
     ),
 
+    # Admin
     path(
         "admin/",
-        admin.site.urls
+        admin.site.urls,
     ),
 
+    # Authentication
     path(
         "api/auth/",
-        include("accounts.urls")
+        include("accounts.urls"),
     ),
 
     path(
         "api/auth/token/refresh/",
         TokenRefreshView.as_view(),
-        name="token_refresh"
+        name="token_refresh",
     ),
 
+    # Students
     path(
         "api/students/",
-        include("students.urls")
+        include("students.urls"),
     ),
 
+    # Academics
     path(
         "api/academics/",
-        include("academics.urls")
+        include("academics.urls"),
     ),
 
+    # Attendance
     path(
         "api/attendance/",
-        include("attendance.urls")
+        include("attendance.urls"),
     ),
 
+    # Examinations
     path(
         "api/exams/",
-        include("examinations.urls")
+        include("examinations.urls"),
     ),
 
+    # Fees
     path(
         "api/fees/",
-        include("fees.urls")
+        include("fees.urls"),
     ),
-    path("api/teachers/", include("teachers.urls")),
-    path("api/notifications/", include("notifications.urls")),
-    path("api/reports/", include("reports.urls")),
+
+    # Teachers
+    path(
+        "api/teachers/",
+        include("teachers.urls"),
+    ),
+
+    # Notifications
+    path(
+        "api/notifications/",
+        include("notifications.urls"),
+    ),
+
+    # Reports
+    path(
+        "api/reports/",
+        include("reports.urls"),
+    ),
 ]
