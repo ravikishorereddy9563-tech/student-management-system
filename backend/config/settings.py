@@ -238,6 +238,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:5174",
     "http://127.0.0.1:5174",
     "https://student-management-system-git-main-project-7d72.vercel.app",
+    "https://student-management-frontend-orcin.vercel.app",
 ]
 
 
